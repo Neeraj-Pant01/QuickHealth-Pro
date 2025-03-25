@@ -1,0 +1,33 @@
+.loader{
+    animation: load 0.5s  infinite ease-in-out;
+}
+.ltextx{
+    animation: loadtext 1s  infinite ease-in-out;
+}
+
+@keyframes load {
+    0%{
+        transform: rotate(45deg);
+    }
+    20%{
+        transform: rotate(90deg);
+    }
+    40%{
+        transform: rotate(180de);
+    }
+    70%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loadtext {
+    0%{
+        color: black;
+    }
+    100%{
+        color:lightgrey;
+    }
+}
