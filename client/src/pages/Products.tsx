@@ -4,10 +4,10 @@ import ProductCard from "../components/common/ProductCard.tsx";
 
 // Sample Product Data
 const products = [
-  { id: 1, name: "Vitamin C Serum", price: 25, category: "Skincare", image: "https://via.placeholder.com/150" },
-  { id: 2, name: "Multivitamin Capsules", price: 40, category: "Multivitamins", image: "https://via.placeholder.com/150" },
-  { id: 3, name: "Herbal Medicine", price: 15, category: "Medicines", image: "https://via.placeholder.com/150" },
-  { id: 4, name: "Sanitizer", price: 10, category: "Hygiene", image: "https://via.placeholder.com/150" },
+  { id: 1, name: "Vitamin C Serum", price: 25, category: "Skincare", image: "https://assets.entrepreneur.com/content/3x2/2000/20150804171106-pills-medicine-medical.jpeg?format=pjeg&auto=webp" },
+  { id: 2, name: "Multivitamin Capsules", price: 40, category: "Multivitamins", image: "https://assets.entrepreneur.com/content/3x2/2000/20150804171106-pills-medicine-medical.jpeg?format=pjeg&auto=webp" },
+  { id: 3, name: "Herbal Medicine", price: 15, category: "Medicines", image: "https://assets.entrepreneur.com/content/3x2/2000/20150804171106-pills-medicine-medical.jpeg?format=pjeg&auto=webp" },
+  { id: 4, name: "Sanitizer", price: 10, category: "Hygiene", image: "https://assets.entrepreneur.com/content/3x2/2000/20150804171106-pills-medicine-medical.jpeg?format=pjeg&auto=webp" },
 ];
 
 const Products: React.FC = () => {
@@ -43,7 +43,7 @@ const Products: React.FC = () => {
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product) => <ProductCard key={product.id} product={product} />)
           ) : (
